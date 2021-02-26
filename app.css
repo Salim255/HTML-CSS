@@ -2,34 +2,74 @@ header{
     margin-left:25px;
 }
 
-.navcontainer {
+nav {
     display: flex;
-    justify-items: flex-start;
+    flex-flow:row wrap;
+    align-items:center;
+   
+  
     
 }
 
- .navcontainer a {
+nav .item-2:hover {
+       
+}
+
+ nav a {
         list-style-type: none;
         color: #0094ff;
         text-decoration-line: none;
 }
 
-.navcontainer a:nth-of-type(1) {
-    flex-grow: 5;
+    nav .item-1 {
+  
+       flex-grow:3;
+    }
+    nav .item-2 {
+        flex-grow: 0;
+        border-top: solid thin;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    nav .item-3 {
+    
+        flex-grow:0.5;
+        color:gray;
+    }
+    nav .item-4 {
+      
+       flex-grow:0.1;
+    }
+
+@media only screen and (max-width:600px){
+
+    nav {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        max-width:350px;
+    }
+    nav .item-1 {
+ 
+       flex-grow:0;
+    }
+
+        nav .item-2 {
+            flex-grow:0 ;
+            background-color: red;
+        }
+
+    nav .item-3 {
+      flex-grow:0;
+       
+    }
+
+    nav .item-4 {
    
-   
+       flex-grow:0;
+
+    }
 }
-.navcontainer a:nth-of-type(2) {
-        flex-grow: 0.5;
-    }
-.navcontainer a:nth-of-type(3) {
-        flex-grow: 0.5;
-    }
-.navcontainer a:nth-of-type(4) {
-        flex-grow: 0.25;
-    }
-
-
 
 
 /* / of navcontainer css*/
@@ -39,7 +79,7 @@ header{
 .div-search {
     display: flex;
     flex-direction: row;
-    
+    flex-basis: 200px;
 }
 
 a.icon {
@@ -58,7 +98,7 @@ a.search {
 }
 input {
     padding: 10px;
-    width: 200px;
+    width: 120px;
     border-color: #F2F2F2;
 }
 /* End of search css*/
@@ -141,8 +181,34 @@ input {
     border-radius: 20px;
 }
 
+
+/***/
+#title1 {
+    display: flex;
+    align-items: center;
+    flex-basis: 400px;
+   margin-bottom:-20px;
+}
+
+.one{
+    margin-left:10px;
+   
+    flex-grow:1;
+}
+
+.two {
+  
+    flex-grow: 0.025;
+}
+/***/
 #left {
      max-width:850px;
+}
+
+#left .item-1{
+    margin-left:10px;
+    flex-basis:600px;
+  
 }
 
  #left img {
@@ -158,8 +224,8 @@ input {
     display: flex;
     background-color: white;
     align-items:center;
-    width:400px;
-    height:160px;
+    flex-basis:400px;
+    width:160px;
     margin:5px;
     border-radius: 10px;
     
@@ -187,7 +253,7 @@ input {
 #activite  {
     display: flex;
     flex-flow: row wrap;
-   
+    justify-content:space-around;
     align-items: flex-end;
 
 }
@@ -204,6 +270,11 @@ input {
     flex-direction: column;
     justify-content: space-around;
     
+}
+
+#activite .item-1{
+ 
+      flex-basis:1200px;
 }
 
  /***/
@@ -370,3 +441,4 @@ input {
    color:black;
       
 }
+

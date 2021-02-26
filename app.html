@@ -2,7 +2,8 @@
 <html lang="fr-fr">
         <head>
             <title>Reservia</title>
-            <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link rel="stylesheet" href="app.css" />
             <link rel="stylesheet" href="C:\Users\Salim\Desktop\openclass\Projet_1\fontawesome-free-5.15.2-web\fontawesome-free-5.15.2-web\css/all.min.css" />
         </head>
@@ -12,13 +13,13 @@
             <!--Header-->
             <header>
                 <nav class="navcontainer">
-                    <a id="resrvia" href="#">Reservia</a>
-                    <a id="huberge" href="#"> Hubergements</a>
-                    <a id="activite" href="#">Activites</a>
-                    <a  id="inscrire" href="#">S'inscrire</a>
+                    <a class="item-1" id="resrvia" href="#"><img style="height:50px; width:80px; object-fit:contain; margin-top:5px;" src="./images/logo/Reservia@3x.png" alt="Hello" /></a>
+                    <a class="item-2" id="huberge" href="#"> Hubergements</a>
+                    <a class="item-3" id="activite" href="#">Activites</a>
+                    <a class="item-4" id="inscrire" href="#">S'inscrire</a>
                 </nav>
                 <!--Title-->
-                <h3>Trouver votre Hubergment pour les vacances de reves</h3>
+                <h6 style="width:180px;">Trouver votre Hubergment pour les vacances de reves</h6>
                 <p>En plein centre ville ou en pleine natue</p><!--search form-->
                 <form class="div-search">
                     <a href="#" class="fas icon fa-map-marker-alt">
@@ -51,34 +52,36 @@
                     </div>
 
                 </div>  <!--/ of Filtre section-->
+                <p>
+                    <i class="fas logement-title fa-exclamation-circle"></i>
+                    Plus de 500 de logement sont  disponible dans cette ville
+                </p>
             </header><!--Fin de Header-->
 
             <!--Main part-->
             <main class="container">
-                <h5>
-                    <i class="fas logement-title fa-exclamation-circle"></i>
-                    Plus de 500 de logement sont  disponible dans cette ville
-                </h5>
+               
 
                 <div class="marseille-logement">
 
                     <!--Marseille logement-->
                     <section id="left" class="marseille">
-                        <card class="card">
+                       <h2 class="item-1">Hubergemnt a marseille</h2>
+                        <figure class="card">
                             <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="reservia" />
-                            <div class="rating">
-                                <h4 style="margin-bottom:-5px;">Auberge de la Cannebierer</h4>
-                                <h5 style="margin-bottom:-5px;">Nuit à partire de 25€</h5>
+                            <figcaption class="rating">
+                                <h5>Auberge de la Cannebierer</h5>
+                                <h4>  Nuit à partire de 25€</h4>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star "></i>
-                            </div>
-                        </card>
-                        <card class="card">
+                            </figcaption>
+                        </figure>
+                        <figure class="card">
                             <img src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hello" />
-                            <div class="rating">
+                            <figcaption class="rating">
                                 <h4>Hôtel du pont</h4>
                                 <h5>Nuit à partire de 52€</h5>
                                 <i class="fas fa-star checked"></i>
@@ -86,12 +89,12 @@
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star  checked"></i>
-                            </div>
-                        </card>
+                            </figcaption>
+                        </figure>
 
-                        <card class="card">
+                        <figure class="card">
                             <img src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Helo" />
-                            <div class="rating">
+                            <figcaption class="rating">
                                 <h4>Hôtel Les mouettes </h4>
                                 <h5>Nuit à partire de 76€</h5>
                                 <i class="fas fa-star checked"></i>
@@ -99,12 +102,12 @@
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star  "></i>
-                            </div>
-                        </card>
+                            </figcaption>
+                        </figure>
 
-                        <card class="card">
+                        <figure class="card">
                             <img src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Helo" />
-                            <div class="rating">
+                            <figcaption class="rating">
                                 <h4>Hôtel de  la mer</h4>
                                 <h5>Nuit à partire de 46€</h5>
                                 <i class="fas fa-star checked"></i>
@@ -112,12 +115,12 @@
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star "></i>
-                            </div>
-                        </card>
+                            </figcaption>
+                        </figure>
 
-                        <card class="card">
+                        <figure class="card">
                             <img src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Helo" />
-                            <div class="rating">
+                            <figcaption class="rating">
                                 <h4>Auberge Le Panier</h4>
                                 <h5>Nuit à partire de 23€</h5>
                                 <i class="fas fa-star checked"></i>
@@ -125,12 +128,12 @@
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star "></i>
-                            </div>
-                        </card>
+                            </figcaption>
+                        </figure>
 
-                        <card class="card">
+                        <figure class="card">
                             <img src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Helo" />
-                            <div class="rating">
+                            <figcaption class="rating">
                                 <h4>Hôtel chez Amina</h4>
                                 <h5>Nuit à partire de 96€</h5>
                                 <i class="fas fa-star checked"></i>
@@ -138,14 +141,20 @@
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
-                            </div>
-                        </card>
+                            </figcaption>
+                        </figure>
                     </section> <!--/ of left side-->
                     <!-- right side-->
                     <aside class="marseille aside-style"  >
-                            <card class="aside-child" >
+                        <div id="title1">
+                            <h4 class="one" >
+                                Les plus pouplaire
+                            </h4>
+                            <i class="fas two fa-chart-line"></i>
+                        </div>
+                            <figure class="aside-child" >
                                 <img src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Helo" />
-                                <div class="rating">
+                                <figcaption class="rating">
                                     <h4>Hôtel le soleil du matin</h4>
                                     <h5>Nuit à partire de 128€</h5>
                                     <i class="fas fa-star checked"></i>
@@ -153,12 +162,12 @@
                                     <i class="fas fa-star checked"></i>
                                     <i class="fas fa-star checked"></i>
                                     <i class="fas fa-star checked"></i>
-                                </div>
-                            </card>
-                            <card class="aside-child" >
+                                </figcaption>
+                            </figure>
+                            <figure class="aside-child" >
                                 
                                 <img src="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Helo" />
-                                <div class="rating">
+                                <figcaption class="rating">
                                     <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                                     <h5>Nuit à partire de 128€</h5>
                                     <i class="fas fa-star checked "></i>
@@ -166,11 +175,11 @@
                                     <i class="fas fa-star checked"></i>
                                     <i class="fas fa-star checked"></i>
                                     <i style="color: #F2F2F2" class="fas fa-star "></i>
-                                </div>
-                            </card>
-                            <card class="aside-child" >
+                                </figcaption>
+                            </figure>
+                            <figure class="aside-child" >
                                  <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Helo" />
-                                <div class="rating">
+                                <figcaption class="rating">
                                     <h4>Hôtel Tout bleu et Blanc</h4>
                                     <h5>Nuit à partire de 128€</h5>
                                     <i class="fas fa-star checked"></i>
@@ -178,15 +187,16 @@
                                     <i class="fas fa-star checked"></i>
                                     <i class="fas fa-star checked"></i>
                                     <i class="fas fa-star"></i>
-                                </div>
-                            </card>
+                                </figcaption>
+                            </figure>
                         
                     </aside> <!--/ of left side-->
                 </div><!-- / Marseille logment-->
                 <br/>
-                <h1>Activites a Marseille</h1>
+                
 
-                <div id="activite">
+                <section id="activite">
+                    <h1 class="item-1">Activites a Marseille</h1>
                     <!--Marseile activites-->
                     <card class="card-2">
                         <img class="imgg" src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Helo" />
@@ -223,11 +233,11 @@
                     
                     </card>
 
-                </div><!--- / of Marseile activites-->
+                </section><!--- / of Marseile activites-->
             </main>
 
             <!--FOOTER-->
-            <div class="FOOTER">
+            <footer class="FOOTER">
                 <div id="item-1" class="txt-deco">
                     <h1>A props</h1>
                     <p><a href="#" >Fontionment du site</a></p>
@@ -246,7 +256,7 @@
                     <p><a href="#">Nous contacter </a></p>
 
                 </div>
-            </div>
+            </footer>
 
 
 
