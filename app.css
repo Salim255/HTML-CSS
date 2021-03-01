@@ -17,7 +17,8 @@ header{
 .item-1{
     
    flex:30;
-   margin-left:-38px;
+   padding-left:10px;
+   
     
 }
 .item-1 img {
@@ -60,100 +61,7 @@ ul li {
 }
 
 
-/* / of navcontainer css*/
-@media all and (min-width:400px) {
-    hr{
-        display:none;
-    }
-  
 
-  
-}
-/***Moblie version*/
-@media all and (max-width:400px) {
-    
-    #activite img {
-        width: 280px;
-        height: 150px;
-        object-fit: none;
-        object-position: 49% 40%;
-    }
-
-    #activite{
-       
-    }
-
-
-
-    aside {
-        background-color: none;
-        flex-direction: column-reverse;
-    }
-   
-        
-      
-    footer {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-
-    .navcontainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        max-height: 50px;
-    }
-
-    .navbar {
-        flex-wrap: wrap;
-    }
-
-.navbar li {
-            flex-basis: 40%;
-}
-
-    nav .item-1 {
-        order: 0;
-    }
-
-    nav .item-2 {
-        border:none;
-        order: 2;
-        margin-left: -25px;
-    }
-
-    nav .item-3 {
-        order: 3;
-    }
-
-    nav .item-4 {
-        order: 1;
-    }
-
-    hr {
-        margin-top: -25px;
-        height:3px;
-        background-color: #F2F2F2 ;
-        border:0;
-        
-       
-    }
-
- hr::after {
-        content: '';
-        display:block;
-        border-bottom:3px solid #0094ff;
-        max-width:50%;
-}
-/**filter*/
- .filter p {
-        flex-basis: 100%;
- }
-
- 
-}
 
   
      
@@ -234,6 +142,10 @@ input {
         border-radius:30px;
         margin: 10px;
  }
+
+.fontstyle {
+    font-weight:bold;
+}
 /*/ of filter side*/
 
 
@@ -249,8 +161,8 @@ input {
 }
 
 .rating {
-    margin-left:20px; 
-    margin-right:20px; 
+    margin-left:5px; 
+    
     margin-bottom:5px;
     
 }
@@ -271,18 +183,18 @@ input {
  }
 
 aside {
-    display: flex;
+    display:flex;
     background-color: #F2F2F2;
     flex-flow: wrap;
-    border-radius: 20px;
+    border-radius: 25px;
     flex-basis: 400px;
 }
 
     aside img {
-        width: 160px;
-        height: 160px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        width: 140px;
+        height: 140px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         padding: 5px;
         object-fit: cover
     }
@@ -299,7 +211,7 @@ aside {
 #title1 {
     display: flex;
     align-items: center;
-    flex-basis: 400px;
+    flex-basis: 95%;
    margin-bottom:-20px;
 }
 
@@ -315,7 +227,7 @@ aside {
 }
 
 .title-4{
-    margin-left:25px;
+    margin-left:10px;
 }
 /***/
 #left {
@@ -330,7 +242,7 @@ aside {
 
  #left img {
         width: 250px;
-        height: 150px;
+        height: 120px;
         object-fit: cover;
         border-top-left-radius:10px;
         border-top-right-radius:10px;
@@ -377,8 +289,10 @@ aside {
     
 }
 
-#activite .title-3 {
-    flex-basis: 1200px;
+.title-3 {
+    margin-left:25px;
+    flex-basis: 100%;
+    align-items:center;
 }
 
  /***/
@@ -512,3 +426,116 @@ footer {
       
 }
 
+
+/* / of navcontainer css*/
+@media all and (min-width:450px) {
+    hr{
+        display:none;
+    }
+
+  
+}
+
+@media all and(max-width:){
+
+}
+
+/***Moblie version*********************************************************************************************************/
+@media all and (max-width:400px) {
+
+
+    #activite{
+        display:flex;
+        align-items:center;
+    }
+
+    #activite card:not(activite-child) {
+        margin-bottom: 20px;
+    }
+
+    #activite img {
+        width: 280px;
+        height: 130px;
+        object-fit: none;
+        object-position: 49% 40%;
+    }
+
+  
+    .marseille-left{
+        background-color:unset;
+    }
+
+    #left img{
+        width:280px;
+    }
+    aside {
+        border-radius: unset;
+    }
+
+    .marseille-logement{
+        align-items:center;
+        flex-direction:column-reverse;
+    }
+
+
+
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+        .navbar li {
+            flex-basis: 40%;
+        }
+
+    nav .item-1 {
+        order: 0;
+    }
+
+    nav .item-2 {
+        border: none;
+        order: 2;
+        margin-left: -25px;
+    }
+
+    nav .item-3 {
+        order: 3;
+    }
+
+    nav .item-4 {
+        order: 1;
+        font-weight: bolder;
+    }
+
+    hr {
+        margin-top: -25px;
+        height: 3px;
+        background-color: #F2F2F2;
+        border: 0;
+    }
+
+        hr::after {
+            content: '';
+            display: block;
+            border-bottom: 3px solid #0094ff;
+            max-width: 50%;
+        }
+    /**filter*/
+
+    .title-3 {
+        margin-left: 25px;
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .filter p {
+        flex-basis: 100%;
+    }
+}
+/****/
