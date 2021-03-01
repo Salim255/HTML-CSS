@@ -9,23 +9,32 @@ header{
     
 }
 
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 .item-1{
     
    flex:30;
    margin-left:-38px;
     
 }
+.item-1 img {
+        height:50px; width:80px; object-fit:contain; 
+ }
+
+.item-1 ~ li a {
+        color: #0094ff;
+ }
+
+
+
 .item-2 {
     margin: 10px;
-    flex:3
-
-    
+    flex:3   
 }
-
-
-
 .item-3 {
-    flex:2;
+    flex: 2;
     margin: 10px;
 }
 
@@ -35,62 +44,120 @@ header{
 }
 
 
- ul li {
-     list-style-type:none;
-  
-      
-}
-ul li a {
-        text-decoration: none;
-    }
-
+ul li {
+    list-style-type: none;
    
+}
+    ul li a {
+        text-decoration: none;
+      
+    }
 
 
 /* / of navcontainer css*/
+@media only screen and (min-width:400px) {
+    hr{
+        display:none;
+    }
 
+}
+/***Moblie version*/
 @media only screen and (max-width:400px) {
-     .navbar{
-         flex-wrap:wrap;
-     }
+    #activite img {
+        width: 280px;
+        height: 150px;
+        object-fit: none;
+        object-position: 49% 40%;
+    }
 
-     .navbar li{
-         flex-basis:40%;
-     }
-        nav .item-1 {
-           order:0;
-      
-          
-          
+    #activite{
+       
+    }
+
+    .marseille-left {
+        display: flex;
+        background-color: none;
+        flex-flow: wrap;
+        border-radius: 20px;
+    }
+
+    .marseille-logement {
+        flex-direction: column-reverse;
+       
+    }
+
+    .FOOTER {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .navcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-height: 50px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+        .navbar li {
+            flex-basis: 40%;
         }
+
+    nav .item-1 {
+        order: 0;
+    }
+
     nav .item-2 {
         order: 2;
         margin-left: -25px;
     }
 
     nav .item-3 {
-       
-      order:3;
-   
-      
+        order: 3;
     }
 
     nav .item-4 {
         order: 1;
-       
-        
     }
+
+    hr {
+        margin-top: -25px;
+        height:3px;
+        background-color: #F2F2F2 ;
+        border:0;
+        
+       
+    }
+
+ hr::after {
+        content: '';
+        display:block;
+        border-bottom:3px solid #0094ff;
+        max-width:50%;
+}
+/**filter*/
+ .filter p {
+        flex-basis: 100%;
  }
 
-  
-      
-   }
+ .item-3 {
+        color: red;
+        background-color:red;
+    }
 }
+
+  
+     
 /*search side...*/
 .div-search {
     display: flex;
     flex-direction: row;
-    flex-basis: 200px;
+    
 }
 
 a.icon {
@@ -124,7 +191,7 @@ input {
     display: flex;
     flex-flow: row wrap;
     align-items: baseline;
-    max-width:750px;
+   
 }
 
 
@@ -185,13 +252,19 @@ input {
     
 }
 
-.marseille {
+.marseille-right {
     display: flex;
     background-color: #F2F2F2;
     flex-flow: wrap;
     border-radius: 20px;
 }
 
+.marseille-left {
+    display: flex;
+    background-color: #F2F2F2;
+    flex-flow: wrap;
+    border-radius: 20px;
+}
 
 /***/
 #title1 {
@@ -213,7 +286,7 @@ input {
 }
 /***/
 #left {
-     max-width:850px;
+     max-width:830.5px;
 }
 
 #left .item-1{
@@ -352,40 +425,7 @@ input {
 
 
 
-@media only screen  and (max-width:600px){
-    #activite img {
-        width: 280px;
-        height: 150px;
-        object-fit: none;
-        object-position: 49% 40%;
-    }
-    .marseille-logement {
-        flex-direction: column-reverse;
-    }
 
-    .FOOTER{
-        flex-direction:column;
-        flex-wrap:wrap;
-        align-items:flex-start;
-    }
-
-
-    .navcontainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        max-height: 50px;
-    }
-
-    #inscrire {
-        order: 3;
-    }
-}
-
-@media only screen  and (max-width:600px){
-  
-}
 
 
 .card {
