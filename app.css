@@ -13,6 +13,7 @@ header{
     font-family: 'Raleway', sans-serif;
 }
 
+
 .item-1{
     
    flex:30;
@@ -23,15 +24,19 @@ header{
         height:50px; width:80px; object-fit:contain; 
  }
 
-.item-1 ~ li a {
+.nav-deco {
         color: #0094ff;
  }
 
-
+.item-3 a {
+    color: black;
+}
 
 .item-2 {
+    border-top: 2px solid #0094ff;
+    padding-top: 10px;
     margin: 10px;
-    flex:3   
+    flex: 3
 }
 .item-3 {
     flex: 2;
@@ -48,21 +53,25 @@ ul li {
     list-style-type: none;
    
 }
-    ul li a {
+
+ ul li a {
         text-decoration: none;
       
-    }
+}
 
 
 /* / of navcontainer css*/
-@media only screen and (min-width:400px) {
+@media all and (min-width:400px) {
     hr{
         display:none;
     }
+  
 
+  
 }
 /***Moblie version*/
-@media only screen and (max-width:400px) {
+@media all and (max-width:400px) {
+    
     #activite img {
         width: 280px;
         height: 150px;
@@ -74,19 +83,16 @@ ul li {
        
     }
 
-    .marseille-left {
-        display: flex;
+
+
+    aside {
         background-color: none;
-        flex-flow: wrap;
-        border-radius: 20px;
-    }
-
-    .marseille-logement {
         flex-direction: column-reverse;
-       
     }
-
-    .FOOTER {
+   
+        
+      
+    footer {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -104,15 +110,16 @@ ul li {
         flex-wrap: wrap;
     }
 
-        .navbar li {
+.navbar li {
             flex-basis: 40%;
-        }
+}
 
     nav .item-1 {
         order: 0;
     }
 
     nav .item-2 {
+        border:none;
         order: 2;
         margin-left: -25px;
     }
@@ -145,10 +152,7 @@ ul li {
         flex-basis: 100%;
  }
 
- .item-3 {
-        color: red;
-        background-color:red;
-    }
+ 
 }
 
   
@@ -238,7 +242,6 @@ input {
     display: flex;
     flex-flow:row wrap; 
     justify-content:space-around; 
-    border-radius: 20px;
 }
 
 .logement-title {
@@ -252,12 +255,38 @@ input {
     
 }
 
-.marseille-right {
+.rating h4 {
+        margin-top:-2px;
+    }
+
+.rating p {
+        margin-top:-15px;
+ }
+.rating div {
+        margin-top:-15px;
+    }
+
+.rating i:not(.checked) { /***/
+        color: #F2F2F2;
+ }
+
+aside {
     display: flex;
     background-color: #F2F2F2;
     flex-flow: wrap;
     border-radius: 20px;
+    flex-basis: 400px;
 }
+
+    aside img {
+        width: 160px;
+        height: 160px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 5px;
+        object-fit: cover
+    }
+  
 
 .marseille-left {
     display: flex;
@@ -284,9 +313,13 @@ input {
   
     flex-grow: 0.025;
 }
+
+.title-4{
+    margin-left:25px;
+}
 /***/
 #left {
-     max-width:830.5px;
+    flex-basis: 830.5px;
 }
 
 #left .item-1{
@@ -306,7 +339,6 @@ input {
 
 .aside-child {
     display: flex;
-    background-color: white;
     align-items:center;
     flex-basis:400px;
     width:160px;
@@ -315,20 +347,9 @@ input {
     
 }
 
-.aside-style {
- 
-    max-width: 400px;
 
-}
 
-.aside-style img {
-    width: 160px;
-    height: 150px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding-left:5px;
-    object-fit: cover
-}
+
 
 
 /* --/ Marseile logment*/
@@ -356,9 +377,8 @@ input {
     
 }
 
-#activite .item-1{
- 
-      flex-basis:1200px;
+#activite .title-3 {
+    flex-basis: 1200px;
 }
 
  /***/
@@ -461,15 +481,14 @@ input {
 
 
 /*FOOTER*/
-.FOOTER {
-    display:flex;
-    flex-flow:row wrap;
-    height:auto;
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
     background-color: #F2F2F2;
-    margin-top:70px;
+    margin-top: 70px;
 }
-
-    #item-1 {
+#item-1 {
         color:black;
         flex-grow:2;
         margin-left:20px;
