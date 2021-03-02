@@ -190,7 +190,7 @@ aside {
     flex-basis: 400px;
 }
 
-    aside img {
+ aside img {
         width: 140px;
         height: 140px;
         border-top-left-radius: 20px;
@@ -198,14 +198,17 @@ aside {
         padding: 5px;
         object-fit: cover
     }
-  
 
-.marseille-left {
+.aside-child {
     display: flex;
-    background-color: #F2F2F2;
-    flex-flow: wrap;
-    border-radius: 20px;
-}
+    align-items: center;
+    flex-basis: 400px;
+    width: 160px;
+    margin: 5px;
+    border-radius: 10px;
+} 
+
+
 
 /***/
 #title1 {
@@ -228,15 +231,23 @@ aside {
 
 .title-4{
     margin-left:10px;
+    flex-basis:100%;
 }
 /***/
+
+
 #left {
+    display: flex;
+    background-color: #F2F2F2;
+    flex-flow: wrap;
+    border-radius: 20px;
     flex-basis: 830.5px;
 }
 
+
 #left .item-1{
     margin-left:10px;
-    flex-basis:600px;
+    flex-basis:100%;
   
 }
 
@@ -249,15 +260,7 @@ aside {
      
  }
 
-.aside-child {
-    display: flex;
-    align-items:center;
-    flex-basis:400px;
-    width:160px;
-    margin:5px;
-    border-radius: 10px;
-    
-}
+
 
 
 
@@ -436,8 +439,52 @@ footer {
   
 }
 
-@media all and(max-width:){
+/**version ipad*/
+@media all and (device-width:768px) {
+    #left img {
+        width: 700px;
+        height: 400px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 
+    aside {
+        background-color: unset;
+    }
+
+        aside img {
+            width: 700px;
+            height: 400px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 5px;
+            object-fit: cover;
+        }
+
+    .aside-child {
+        display: flex;
+        align-items: center;
+        flex-basis: 700px;
+        width: 700px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    #title1 + figure img {
+        width: 530px;
+    }
+
+    /***activite */
+    #activite img {
+        width: 700px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #activite > card {
+        margin-top: 40px;
+    }
 }
 
 /***Moblie version*********************************************************************************************************/
@@ -461,10 +508,9 @@ footer {
     }
 
   
-    .marseille-left{
+    #left{
         background-color:unset;
     }
-
     #left img{
         width:280px;
     }
