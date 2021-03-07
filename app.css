@@ -8,7 +8,19 @@ header{ /**marge de 25px de la droite */
    
 }
 
-* {/**Appliquer le font Releway a tous les elements dans la page html*/
+.container {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.information {
+   display:flex;
+}
+.information span {
+    margin-left:10px;
+}
+
+* { /**Appliquer le font Releway a tous les elements dans la page html*/
     font-family: 'Raleway', sans-serif;
 }
 
@@ -216,12 +228,14 @@ input {
     flex-basis: 100%;
 }
 
-
-    /**rating....*/
+.firstline {
+    margin-top:-10px;
+    background-color:red;
+}
+/**rating....*/
 .rating {
-    margin-left:5px; 
-    margin-bottom:5px;
-    
+    margin-left: 5px;
+    margin-bottom: -10px;
 }
 
 .rating .fontstyle {
@@ -235,9 +249,25 @@ input {
         margin-top:-10px;
     }
 
-.rating i:not(.checked) { 
+.rating  i:not(.checked) { 
         color: #F2F2F2;
- }/***end rating*/
+ }
+
+
+
+
+.rating-2 i:not(.checked) {
+    color: #F2F2F2;
+}
+
+
+.rating-2  div{
+    margin-right:5px;
+  
+
+    
+}
+/***end rating*/
 
 
 /***aside side css----*/
@@ -402,10 +432,6 @@ aside {
    margin-right:-42px
 }
 /****/
-.container {
-    margin-left: 25px;
-    margin-right: 25px;
-}
 
 
 
@@ -480,7 +506,7 @@ footer {
 
 
 /* / of navcontainer css*/
-@media all and (min-width:450px) {
+@media all and (min-width:400px) {
     hr{
         display:none;
     }
@@ -489,10 +515,10 @@ footer {
 }
 
 /**version ipad*/
-@media all and (device-width:768px) {
+@media only screen  and (max-width:1024px) and (min-width:401px){
     #left img {
-        width: 700px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -503,8 +529,8 @@ footer {
     }
 
         aside img {
-            width: 700px;
-            height: 400px;
+            width: 400px;
+            height: 300px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             padding: 5px;
@@ -515,7 +541,7 @@ footer {
         display: flex;
         align-items: center;
         flex-basis: 700px;
-        width: 700px;
+        
         margin: 5px;
         border-radius: 10px;
     }
@@ -537,7 +563,15 @@ footer {
 }
 
 /***Moblie version*********************************************************************************************************/
-@media all and (max-width:400px) {
+@media only screen and (max-width:400px) {
+    .rating {
+       margin-left: 10px;
+        margin-bottom: 2px;
+    }
+
+    .filter > div{
+        margin-left:-5px;
+    }
 
     .margin-none {
         margin: unset;
@@ -545,8 +579,7 @@ footer {
     
  
     #activite{
-        display:flex;
-        align-items:center;
+       margin-left:5px;
         
     }
 
@@ -561,7 +594,7 @@ footer {
     }
 
     #activite img {
-        width: 280px;
+        width: 320px;
         height: 130px;
         object-fit: none;
         object-position: 49% 40%;
@@ -571,18 +604,27 @@ footer {
     }
   
     #left{
+   
         background-color:unset;
-        align-content:center;
+        margin-left:-20px;
+    
     }
     #left img{
-        width:280px;
+        width:320px;
+        
     }
     aside {
         border-radius: unset;
+        margin-left:-26px;
+        margin-right:8px;
     }
 
+    .aside-child {
+    
+        width:320px;
+    }
     .marseille-logement{
-        align-items:center;
+        justify-content:center;
         flex-direction:column-reverse;
     }
 
@@ -592,8 +634,11 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
+        margin-right:-14px;
     }
-
+    #item-1{
+        padding-top:20px;
+    }
 
     .navbar {
         flex-wrap: wrap;
@@ -628,8 +673,7 @@ footer {
         height: 3px;
         background-color: #F2F2F2;
         border: 0;
-        margin-left:0;
-        margin-right:0;
+        margin-right:-16px;
     }
 
         hr::after {
@@ -641,7 +685,7 @@ footer {
     /**filter*/
 
     .title-3 {
-        margin-left:20px;
+        margin-left:-10px;
       
     }
 
