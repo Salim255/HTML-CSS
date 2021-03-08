@@ -201,9 +201,12 @@ input {
     background-color: #F2F2F2;
     flex-flow: wrap;
     border-radius: 20px;
-    flex-basis: 830.5px;
-    padding:10px;
+    flex-basis: 65%;
+   
     margin-top:5px;
+    padding-top:20px;
+   min-height:600px;
+    
 }
 #left .item-1 {
         margin-left: 5px;
@@ -214,7 +217,7 @@ input {
 }
 
  #left img {
-        width: 250px;
+        width: 240px;
         height: 120px;
         object-fit: cover;
         border-top-left-radius: 10px;
@@ -234,7 +237,7 @@ input {
 /**rating....*/
 .rating {
     margin-left: 5px;
-    margin-bottom: -10px;
+    margin-bottom:-10px;
 }
 
 .rating .fontstyle {
@@ -268,7 +271,7 @@ aside {
     background-color: #F2F2F2;
     flex-flow: wrap;
     border-radius: 25px;
-    flex-basis: 400px;
+    flex-basis: 33%;
     padding-bottom:20px;
   
 }
@@ -296,7 +299,6 @@ aside {
     display: flex;
     align-items: center;
     flex-basis: 400px;
-    width: 160px;
     margin: 5px;
     border-radius: 10px;
 } 
@@ -317,11 +319,13 @@ aside {
 
 /* --/ Marseile logment*/
 /*Marseile activites side*/
-#activite  {
+#activite {
     display: flex;
-    flex-direction: row ;
-    flex-wrap:wrap;
-   justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content:space-around;
+  
 }
 
 .margin-none{
@@ -420,7 +424,7 @@ aside {
 
 
 .imgg {
-    width: 280px;
+    flex-basis: 280px;
     height: 330px;
     object-fit: none;
     object-position:49% 20% ;
@@ -480,106 +484,254 @@ footer {
   
 }
 
-/**version ipad*/
-@media only screen  and (max-width:800px) and (min-width:650px){
-    #left img {
-        width: 314px;
-        height: 200px;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .rating{
-        margin-bottom:5px;
-    }
-    aside {
-     
-        margin-top:30px;
+/*laptob L version*/
+@media only screen and (min-width:1131px) and (max-width:1320px) {
+    #left {
+        flex-basis: 100%;
+        justify-content: center;
     }
 
-    aside img {
-            width: 300px;
-            height: 280px;
+        #left img {
+            width: 314px;
+            height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+    .rating {
+        margin-bottom: 5px;
+    }
+
+    aside {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+        aside img {
+            display: flex;
+            width: 250px;
+            height: 250px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             padding: 5px;
             object-fit: cover;
+        }
 
+    #aside-title {
+        margin-bottom: 5px;
     }
 
-    #aside-title{
-        margin-bottom:5px;
-    }
     .aside-child {
         display: flex;
         align-items: center;
         flex-basis: 650px;
-        width: 650px;
         margin: 5px;
         border-radius: 10px;
-    } 
+    }
 
     #title1 + figure img {
- 
     }
 
     /***activite */
-   
+
 
     .card-2 {
         margin: 0;
     }
- 
+
+
+    .activite-child {
+        flex-flow: column;
+    }
+
+    #activite img {
+        width: 320px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+
+    .zero {
+        order: 0;
+    }
+
+    .one {
+        order: 2;
+       margin-left:-30px;
+       margin-bottom:30px;
+    }
+
+    .two {
+        order: 1;
+        margin-bottom:30px;
+        margin-left:70px;
+      
+    }
+
+    .column2-1 {
+     margin-right:50px;
+
+    }
+
+    .three {
+        order: 3;
+        margin-top:30px;
+        margin-bottom:-30px;
+
+    }
+
+    .four {
+        order: 4;
+        margin-left:-150px;
+        margin-top:30px;
+        margin-bottom:-30px;
+        
+    }
+
+    .column4-1 {
+       margin-right:60px;
+    }
+    .column4-2 {
+        margin-right: -20px;
+    }
+
+    .activite-child {
+        flex-direction: row;
+        
+    }
+
+    #activite {
+        margin-left:-20px;
+        justify-content: space-around;
+    }
+
+        #activite > figure {
+           
+        }
+}
+
+
+/**version ipad*/
+@media only screen and (max-width:1130px) and (min-width:768px) {
+
+    #left {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+        #left img {
+            width: 314px;
+            height: 150px;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+    .rating {
+        margin-bottom: 5px;
+    }
+
+    aside {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+        aside img {
+            display: flex;
+            width: 250px;
+            height: 250px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 5px;
+            object-fit: cover;
+        }
+
+    #aside-title {
+        margin-bottom: 5px;
+    }
+
+    .aside-child {
+        display: flex;
+        align-items: center;
+        flex-basis: 650px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    #title1 + figure img {
+    }
+
+    /***activite */
+
+
+    .card-2 {
+        margin: 0;
+    }
+
+    .activite-child {
+        flex-flow: column;
+    }
+
     #activite img {
         width: 340px;
-        height: 250px;
+        height: 200px;
         object-fit: cover;
     }
 
     .zero {
         order: 0;
     }
-    .one{
-        order:2;
-        margin-right:20px;
-    }
- 
-    .two{
-        order:1;
-       margin-bottom:-10px;
 
+    .one {
+        order: 2;
+        margin-right: 10px;
     }
-    .column2-1{
-        margin-right:20px;
+
+    .two {
+        order: 1;
+        margin-bottom: -10px;
+    }
+
+    .column2-1 {
+        margin-right: 20px;
     }
 
     .three {
         order: 3;
+        margin-left: 10px;
     }
+
     .four {
         order: 4;
         margin-top: 30px;
         margin-left: -42px;
     }
-    .column4-1{
-        margin-right:20px;
-            
+
+    .column4-1 {
+        margin-right: 20px;
     }
 
     .activite-child {
-        
         flex-direction: row;
-     
     }
 
-
-    #activite > figure {
-        margin-top: 40px;
+    #activite {
+        justify-content: center;
     }
+
+        #activite > figure {
+            margin-top: 40px;
+        }
 }
 
 /***Moblie version*********************************************************************************************************/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:767px) {
+    .marseille-logement {
+      
+    }
     .rating {
        margin-left: 10px;
         margin-bottom: 2px;
